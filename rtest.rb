@@ -16,7 +16,7 @@ def it(description, &test)
 end
 
 def context(description, &tests)
-  puts "#{'    '*self.tabs}description"
+  puts "#{'    '*self.tabs}#{description}"
   self.tabs += 1
   instance_exec(&tests)
 end
